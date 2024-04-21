@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== CSS ===== -->
+        
+        <style>
+          
+      
+     
+          
+        
+        
+        @media (max-width: 768px) {
+          .tips-innercon {
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      
+        @media(max-width:768px){
+          #container{
+            display:grid;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            
+          }
+        }
+        hr{
+          width:80%;
+          border: 2px solid white;
+          margin : 0 auto;
+        }
+        .heading{
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          color:white;
+          font-size: 3rem;
+          font-weight: bold;
+          margin-top: 0;
+          width:100%;
+          padding-top: 10px;
+
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+          -moz-appearance: textfield;
+        }
+        /*
+        .link-box {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          width: 350px;
+          height: 100px;
+          background-color: #020412;
+          border: 3px solid #3664F4;
+          margin: 10px;
+          
+          font-size: 2rem;
+          font-weight: bold;
+          color: rgb(255, 255, 255);
+          text-decoration: none;
+          text-wrap: nowrap;
+          cursor: pointer;
+      }
+  
+      .link-box:hover {
+          background-color: #3664F4;
+          color: #020412;
+          border: 3px solid #3664F4;
+      }
+  
+      .link-box:hover a {
+          color: #020412;
+      }
+  
+      .link-box a {
+          color: rgb(255, 255, 255);
+          text-decoration: none;
+      }
+          
+      */
+
+      .three {
+        background: #ffffff;
+        color: #3664F4;
+        border: 2px solid #3664F4;
+        border-radius: 5px; 
+        transition: background 400ms ease-out,
+        color 400ms ease-out; 
+        width: 230px;
+        padding: 20px;
+        margin-top:20px;
+        font-size: 1.4rem;
+        font-weight: 700;
+        cursor: pointer;
+        border: none;
+        flex: 0 0 auto; /* Prevent buttons from stretching */
+        
+    }
+    
+    .three:hover {
+        background: #3664F4;
+        color: #ffffff;
+        border-radius: 5px; 
+    }
+
+        .container{
+
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          width: 100%;
+          margin-top: 100px;
+          overflow-x: auto;
+        }
+        
+          
+          @media(max-width:768px){
+            .link-box{
+              width: 50%;
+              font-size: 1.3rem;
+            }
+          }
+
+          #container{
+            border:1px solid rgb(0, 124, 124);
+            border-radius :20px;
+            width:600px;
+            margin:20px auto;
+            padding:20px;
+            text-align:center;
+            background : #050A30;
+            
+          }
+          
+          #filler{
+            background : #98ea70;
+            height: 0px;
+            width: 200px;
+            position:absolute;
+            bottom:0;
+          }
+
+          /*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 5rem;
+  
+  /*===== Colores =====*/
+  --first-color: #3664F4;
+  --dark-color: #020412;
+  --dark-color-alt: #282B3A;
+  --white-color: #E6E7E9;
+
+  /*===== Fuente y tipografia =====*/
+  --body-font: 'Poppins', sans-serif;
+  --normal-font-size: 1.1rem;
+  --small-font-size: .813rem;
+
+  /*===== z index =====*/
+  --z-fixed: 100;
+}
+/*
+@media screen and (min-width: 768px) {
+  :root {
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+  }
+}
+*/
+/*===== BASE =====*/
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+  background-color: #020412;
+  color:white;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bd-grid {
+  max-width: 1024px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/*===== HEADER =====*/
+.header {
+  width: 100%;
+  height: var(--header-height);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 1.5rem;
+  background-color: var(--dark-color);
+  z-index: var(--z-fixed);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  color: var(--white-color);
+}
+
+.header__toggle {
+  font-size: 1.5rem;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+/*===== NAV =====*/
+@media screen and (max-width: 768px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    width: 100%;
+    height: 100vh;
+    padding: 1.5rem 0;
+    z-index: var(--z-fixed);
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+}
+
+.nav__content {
+  height: 100%;
+  -ms-grid-rows: max-content 1fr max-content;
+      grid-template-rows: -webkit-max-content 1fr -webkit-max-content;
+      grid-template-rows: max-content 1fr max-content;
+  row-gap: 2rem;
+}
+
+.nav__close {
+  position: absolute;
+  right: 1.5rem;
+  font-size: 1.3rem;
+  padding: .25rem;
+  background-color: var(--dark-color-alt);
+  border-radius: 50%;
+  cursor: pointer;
+}
+/*
+.nav__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: .25rem;
+  margin-bottom: .8rem;
+  width: 56px;
+  height: 56px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+  overflow: hidden;
+}
+*/
+.nav__img img {
+  width: 46px;
+}
+
+.nav__name {
+  display: block;
+  color: var(--white-color);
+}
+
+.nav__profesion {
+  font-size: var(--small-font-size);
+}
+
+.nav__menu {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.nav__item {
+  margin: 2.5rem 0;
+}
+
+.nav__link {
+  color: var(--white-color);
+}
+
+.nav__social {
+  padding-top: .5rem;
+  display:flex;
+}
+
+.nav__social-icon {
+  font-size: 2rem;
+  color: var(--white-color);
+  margin-right: 1rem;
+  padding-bottom: 3rem
+}
+
+.nav__social-icon:hover {
+  color: var(--first-color);
+}
+
+/*Aparecer menu*/
+.show {
+  left: 0;
+}
+
+/*Active menu*/
+.active {
+  color: var(--first-color);
+}
+
+/*===== MEDIA QUERIES =====*/
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+  .header {
+    height: calc(var(--header-height) + 1rem);
+  }
+  .header__logo, .header__toggle {
+    display: none;
+  }
+  .nav {
+    width: 100%;
+  }
+  .nav__content {
+    
+    -ms-grid-columns: (max-content)[3];
+        grid-template-columns: repeat(3, -webkit-max-content);
+        grid-template-columns: repeat(3, max-content);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -webkit-column-gap: 1rem;
+            column-gap: 1rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav__close, .nav__profesion {
+    display: none;
+  }
+  .nav__perfil {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav__img {
+    width: 32px;
+    height: 32px;
+    margin-right: .5rem;
+    margin-bottom: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav__img img {
+    width: 26px;
+  }
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav__item {
+    margin: 0 .25rem;
+  }
+  .nav__link {
+    padding: .5rem .8rem;
+    border-radius: .25rem;
+  }
+  .nav__link:hover {
+    background-color: var(--first-color);
+  }
+  .active {
+    background-color: var(--first-color);
+    color: var(--white-color);
+  }
+
+}
+    @media screen and (min-width: 1024px) {
+        .bd-grid {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    
+    .nav__social-icon {
+      display: none; 
+    }
+    
+  }
+
+
+
+  
+/*footer*/
+footer {
+  text-align: center;
+  
+  padding: 10px 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  margin-top: 50px;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+
+
+.footer {
+ 
+  width: 100%;
+  min-height: 100px;
+  padding: 20px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.nav__social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+        </style>
+
+
+        <title>CLOck</title>
+    </head>
+    <body>
+        <header class="header">
+            <a href="./index.html" class="header__logo">CLOck</a>
+
+            <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+
+            <nav class="nav" id="nav-menu">
+                <div class="nav__content bd-grid">
+
+                    <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
+    
+                    <div class="nav__perfil">
+                        <div class="nav__img">
+                            <img src="./image/clockiconimg.png" alt="">
+                        </div>
+                        
+                        <div>
+                            <a href="./index.html" class="nav__name">CLOck</a>
+                            <span class="nav__profesion">Tejas</span>
+                        </div>
+                    </div>
+    
+                    <div class="nav__menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="./index.html" class="nav__link ">CLoCk</a></li>
+                            <li class="nav__item"><a href="./Worldclock.html" class="nav__link">WORLD CLOCK</a></li>
+                            <li class="nav__item"><a href="./POMODORO.html" class="nav__link">POMODORO</a></li>
+                            <li class="nav__item"><a href="./Workout.html" class="nav__link active">WORKOUT</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="nav__social">
+                      
+                        <ul class="nav__social-icon">
+                            <a class="nav__social-icon" href="#" target="_blank">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            <a class="nav__social-icon" href="https://twitter.com/TEJASM74" target="_blank">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            <a class="nav__social-icon" href="https://www.linkedin.com/in/tejasm74" target="_blank">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            <a class="nav__social-icon" href="https://www.instagram.com/_tejas_m7_/?igshid=dDB3MnQ3bjZtcGRl" target="_blank">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            <a class="nav__social-icon" href="https://github.com/TejasManjunath" target="_blank">
+                                <ion-icon name="logo-github"></ion-icon>
+                                </a>
+                            
+                            </ul>
+
+                    </div>
+                    
+                </div>
+            </nav>
+        </header>
+
+        <main>
+        
+          <div class="container">
+            <div class="link-box"><a href="./TABATA.html"><div class="button-box-special">
+              <button onclick="myFunction()" class="three">TABATA TIMER</button>
+            </div></a>
+             </div>
+            <div class="link-box"><a href="./STOPWATCH.html"><div class="button-box-special">
+              <button onclick="myFunction()" class="three">STOP WATCH</button>
+            </div> </a> 
+
+            </div>
+            <div class="link-box"><a href="./Emom.html"><div class="button-box-special">
+              <button onclick="myFunction()" class="three">EMOM TIMER</button>
+            </div></a>
+
+             </div>
+            <div class="link-box"><a href=""><div class="button-box-special">
+              <button onclick="myFunction()" class="three">INTERVAL TIMER</button>
+            </div></a> 
+
+            </div>
+            <div class="link-box"><a href="./AMRAP.html"><div class="button-box-special">
+              <button onclick="myFunction()" class="three">AMRAP TIMER</button>
+            </div></a> 
+
+            </div>
+        </div>
+
+      
+      
+        </main>
+        <footer>
+            <footer class="footer">
+              
+          
+              <ul class="social-icon">
+              <li class="social-icon__item"><a class="social-icon__link" href="#" target="_blank">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                  </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/TEJASM74" target="_blank">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                  </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/tejasm74" target="_blank">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                  </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/_tejas_m7_/?igshid=dDB3MnQ3bjZtcGRl" target="_blank">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                  </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/TejasManjunath" target="_blank">
+                  <ion-icon name="logo-github"></ion-icon>
+                  </a></li> 
+              
+              </ul>
+              <ul class="menu">
+              <li class="menu__item"><a class="menu__link" href="./index.html">Home</a></li>
+              <li class="menu__item"><a class="menu__link" href="./about.html">About</a></li>
+              <li class="menu__item"><a class="menu__link" href="https://github.com/TejasManjunath">Portfolio</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+        
+              </ul>
+              <p style="text-align: center;">&copy;2023 TEJASM74 | All Rights Reserved</p>
+          </footer>
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+          </footer>
+          </footer>
+
+
+
+        <!-- ===== IONICONS ===== -->
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="./assets/mainjs.js"></script>
+        
+    </body>
+</html>

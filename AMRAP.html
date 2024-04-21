@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="./assets/AMRAP.css">
+        
+
+        <title>CLOck</title>
+    </head>
+    <body>
+        <header class="header">
+            <a href="./index.html" class="header__logo">CLOck</a>
+
+            <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+
+            <nav class="nav" id="nav-menu">
+                <div class="nav__content bd-grid">
+
+                    <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
+    
+                    <div class="nav__perfil">
+                        
+                        
+                        <div>
+                            <a href="./index.html" class="nav__name">CLOck</a>
+                            <span class="nav__profesion">Tejas</span>
+                        </div>
+                    </div>
+    
+                    <div class="nav__menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="./index.html" class="nav__link ">CLoCk</a></li>
+                            <li class="nav__item"><a href="./Worldclock.html" class="nav__link ">WORLD CLOCK</a></li>
+                            <li class="nav__item"><a href="./POMODORO.html" class="nav__link ">POMODORO</a></li>
+                            <li class="nav__item"><a href="./Workout.html" class="nav__link active">WORKOUT</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="nav__social">
+                      
+                        <ul class="nav__social-icon">
+                            <a class="nav__social-icon" href="#" target="_blank">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            <a class="nav__social-icon" href="https://twitter.com/TEJASM74" target="_blank">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            <a class="nav__social-icon" href="https://www.linkedin.com/in/tejasm74" target="_blank">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            <a class="nav__social-icon" href="https://www.instagram.com/_tejas_m7_/?igshid=dDB3MnQ3bjZtcGRl" target="_blank">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            <a class="nav__social-icon" href="https://github.com/TejasManjunath" target="_blank">
+                                <ion-icon name="logo-github"></ion-icon>
+                                </a>
+                            
+                            </ul>
+
+                    </div>
+                    
+                </div>
+            </nav>
+        </header>
+        <main>
+
+            <div class="heading"> <p class="heading">AMRAP TIMER</p></div>
+             
+             <div id="tabata-app">
+                 <div id="container">
+                     
+                     
+                    <div class="timer-container">
+                        <div id="timer" class="timer">00:00</div>
+                        <label for="minutes">Enter minutes:</label>
+                        <input type="number" id="minutes" min="1" value="1">
+                        <div id="buttons">
+                            <button onclick="pauseTimer()" id="pause">Pause</button>
+                            <button onclick="startTimer()" id="start">Start</button>
+                            <button onclick="resetTimer()" id="reset">Reset</button>
+                        </div>
+                    </div>
+                    <audio id="countdownSound" src="beep.mp3"></audio>
+                    <audio id="timerTickSound" src="beep.mp3"></audio>
+                    <audio id="timerCompleteSound" src="tada.mp3"></audio>
+
+                     
+                     
+                 </div>
+             </div>
+               
+               <section id="tips-container-section">
+                 <h2>Tips for AMRAP exercises</h2>
+                 <p><h3></h3></p>
+                 
+                 <ul class="tips-innercon">
+                   <li>
+                     <div class="tip">
+                       <div class="iconholder">
+                           <div class="icon">1 </div>
+                           <div class="icon2"><img src="./images/timing-tabata.png"></div>
+                       </div>
+                       <p><strong>Set a Clear Goal: </strong>Before starting your AMRAP set, decide on a specific goal for the number of reps you want to achieve. This will give you a target to work towards and help you push yourself during the set.</p>
+                     </div>
+                   </li>
+                   
+                   <li>
+                     <div class="tip">
+                       <div class="iconholder">
+                         <div class="icon">2 </div>
+                         <div class="icon2"><img src="./images/workouticon.png"></div>
+                       </div>
+                       <p><strong>Choose Appropriate Weight:</strong> Select a weight that challenges you but allows you to maintain good form throughout the set. If the weight is too light, you won't maximize your effort, and if it's too heavy, you might sacrifice form and risk injury.</p>
+                     </div>
+                   </li>
+                   
+                   <li>
+                     <div class="tip">
+                       <div class="iconholder">
+                         <div class="icon">3 </div>
+                         <div class="icon2"><img src="./images/warmup-tabata.png"></div>
+                       </div>
+                       <p><strong>Warm-Up Thoroughly:  </strong>Spend adequate time warming up your muscles and joints before diving into the AMRAP set. This helps prevent injuries and prepares your body for the intensity of the workout.
+                       </p>
+                     </div>
+                   </li>
+                   
+                   <li>
+                     <div class="tip">
+                       <div class="iconholder">
+                         <div class="icon">4 </div>
+                         <div class="icon2"><img src="./images/choose-tabata.png"></div>
+                         </div>
+                       <p><strong>Focus on form:</strong> Quality reps are crucial for getting the most out of an AMRAP set. Focus on performing each rep with proper form, especially as fatigue sets in. Avoid rushing through reps or sacrificing technique to chase a higher rep count.
+                       </p>
+                     </div>
+                   </li>
+                   
+                   <li>
+                     <div class="tip">
+                       <div class="iconholder">
+                         <div class="icon">5 </div>
+                         <div class="icon2"><img src="./images/breathing-tabata.png"></div>
+                         </div>
+                       <p><strong>Control Your Breathing:</strong>Pay attention to your breathing throughout the set. Take deep breaths in and exhale forcefully during exertion phases of the exercise. Proper breathing can help you maintain stamina and energy during the AMRAP.</p>
+                     </div>
+                   </li>
+                   <li>
+                     <div class="tip">
+                       <div class="iconholder">
+                         <div class="icon">6</div>
+                         <div class="icon2"><img src="./images/pullup-tabata.png"></div>
+                         </div>
+                       <p><strong>Pace Yourself: </strong>While AMRAP workouts are about pushing your limits, pacing yourself is important to sustain effort throughout the set. Find a rhythm that allows you to keep moving consistently without burning out too quickly.
+                       </p>
+                     </div>
+                   </li>
+                   <li>
+                     <div class="tip">
+                       <div class="iconholder">
+                         <div class="icon">7 </div>
+                         <div class="icon2"><img src="./images/listen-tabata.png"></div>
+                         </div>
+                       <p><strong>Stay Mentally Tough:  </strong>Mental strength plays a significant role in AMRAP workouts. Prepare yourself to push through discomfort and fatigue, focusing on your goal and staying motivated even as the set becomes challenging.</p>
+                     </div>
+                   </li>
+                   <li>
+                     <div class="tip">
+                       <div class="iconholder">
+                         <div class="icon">8 </div>
+                         <div class="icon2"><img src="./images/rest-tabata.png"></div>
+                         </div>
+                       <p><strong>Track Your Progress:  </strong>: Keep a record of your AMRAP performances, including the number of reps completed and any notes about the workout. Tracking your progress over time can help you set new goals and gauge improvements in strength and endurance.
+                        
+                        </p>
+                     </div>
+                   </li>
+                   
+             </div>       
+             <hr>
+           <section id="information">
+             <h2>What is AMRAP</h2>
+             <h3><p>AMRAP stands for "As Many Reps (or Rounds) As Possible." It's a type of workout format commonly used in strength training and high-intensity interval training (HIIT) routines. In an AMRAP workout, the goal is to complete as many repetitions or rounds of a specific exercise or set of exercises within a set time frame.</p></h3>
+             <hr>
+             <h2> AMRAP Exercises </h2>
+             <h3>
+               <ul id="exetips">
+                    <li>1.Full-Body AMRAP: 
+                        <ul>
+                            <li>Bodyweight Squats</li>
+                            <li>Push-Ups</li>
+                            <li>Burpees</li>
+                            <li>Sit-Ups</li>
+                            
+                        </ul>
+                    </li><br><br>
+                    <li>2.Upper Body Focus:
+                        <ul>
+                            <li>Pull-Ups or Bent-Over Rows</li>
+                            <li>Push-Ups or Dumbbell Presses</li>
+                            <li>Dips (using parallel bars or a bench)</li>
+                            <li>Plank (hold for max time)</li>
+                        </ul>
+                    </li><br><br>
+                    <li>3.Lower Body Blast:
+                        <ul>
+                            <li>Kettlebell Swings</li>
+                            <li>Box Jumps or Step-Ups</li>
+                            <li>Lunges (alternating legs)</li>
+                            <li>Wall Sit (hold for max time)</li>
+                        </ul>
+                    </li><br><br>
+                    <li>4.Core and Cardio AMRAP:
+                        <ul>
+                            <li>Mountain Climbers</li>
+                            <li>Bicycle Crunches</li>
+                            <li>Jumping Jacks</li>
+                            <li>Russian Twists (with a medicine ball or weight)</li>
+                        </ul>
+                    </li>
+                </ul>
+             </h3>
+           </section>
+           
+           
+         </main>
+
+
+
+        <footer>
+            <footer class="footer">
+              
+          
+              <ul class="social-icon">
+              <li class="social-icon__item"><a class="social-icon__link" href="#" target="_blank">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                  </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/TEJASM74" target="_blank">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                  </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/tejasm74" target="_blank">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                  </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/_tejas_m7_/?igshid=dDB3MnQ3bjZtcGRl" target="_blank">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                  </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/TejasManjunath" target="_blank">
+                  <ion-icon name="logo-github"></ion-icon>
+                  </a></li> 
+              
+              </ul>
+              <ul class="menu">
+              <li class="menu__item"><a class="menu__link" href="./index.html">Home</a></li>
+              <li class="menu__item"><a class="menu__link" href="./about.html">About</a></li>
+              <li class="menu__item"><a class="menu__link" href="https://github.com/TejasManjunath">Portfolio</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+        
+              </ul>
+              <p style="text-align: center;">&copy;2023 TEJASM74 | All Rights Reserved</p>
+           </footer>  
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+          </footer>
+          </footer>
+          
+          
+
+
+
+        <!-- ===== IONICONS ===== -->
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="./assets/AMRAP.js"></script>
+        
+    </body>
+</html>

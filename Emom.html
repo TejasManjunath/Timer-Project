@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="./assets/Emom.css">
+        
+
+        <title>CLOck</title>
+    </head>
+    <body>
+        <header class="header">
+            <a href="./index.html" class="header__logo">CLOck</a>
+
+            <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+
+            <nav class="nav" id="nav-menu">
+                <div class="nav__content bd-grid">
+
+                    <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
+    
+                    <div class="nav__perfil">
+                        
+                        
+                        <div>
+                            <a href="./index.html" class="nav__name">CLOck</a>
+                            <span class="nav__profesion">Tejas</span>
+                        </div>
+                    </div>
+    
+                    <div class="nav__menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="./index.html" class="nav__link ">CLoCk</a></li>
+                            <li class="nav__item"><a href="./Worldclock.html" class="nav__link ">WORLD CLOCK</a></li>
+                            <li class="nav__item"><a href="./POMODORO.html" class="nav__link ">POMODORO</a></li>
+                            <li class="nav__item"><a href="./Workout.html" class="nav__link active">WORKOUT</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="nav__social">
+                      
+                        <ul class="nav__social-icon">
+                            <a class="nav__social-icon" href="#" target="_blank">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            <a class="nav__social-icon" href="https://twitter.com/TEJASM74" target="_blank">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            <a class="nav__social-icon" href="https://www.linkedin.com/in/tejasm74" target="_blank">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            <a class="nav__social-icon" href="https://www.instagram.com/_tejas_m7_/?igshid=dDB3MnQ3bjZtcGRl" target="_blank">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            <a class="nav__social-icon" href="https://github.com/TejasManjunath" target="_blank">
+                                <ion-icon name="logo-github"></ion-icon>
+                                </a>
+                            
+                            </ul>
+
+                    </div>
+                    
+                </div>
+            </nav>
+        </header>
+        <main>
+
+            <div class="heading"> <p class="heading">EMOM TIMER</p></div>
+             
+             <div id="tabata-app">
+                 <div id="container">
+                     
+                     
+                     <div class="timer-container">
+                        
+                        <div id="timer">01:00</div>
+                        <div>
+                            <label for="setsInput">Number of rounds:</label>
+                            <input type="number" id="setsInput" min="1" value="1">
+                          </div>
+                        <div id="buttons">
+                          <button id="pause" disabled>Pause</button>
+                          <button id="start">Start</button>
+                          <button id="reset">Reset</button>
+                        </div>
+                      </div>
+
+                     
+                     
+                 </div>
+             </div>
+               
+               <section id="tips-container-section">
+                 <h2>Tips for EMOM exercises</h2>
+                 <p><h3></h3></p>
+                 
+                 <ul class="tips-innercon">
+                   <li>
+                     <div class="tip">
+                       <div class="iconholder">
+                           <div class="icon">1 </div>
+                           <div class="icon2"><img src="./images/timing-tabata.png"></div>
+                       </div>
+                       <p><strong>Take breaks:</strong>If you're tired or winded, pause your workout to rest or drink water.</p>
+                     </div>
+                   </li>
+                   
+                   <li>
+                     <div class="tip">
+                       <div class="iconholder">
+                         <div class="icon">2 </div>
+                         <div class="icon2"><img src="./images/breathing-tabata.png"></div>
+                       </div>
+                       <p><strong>Maintain a positive mindset:</strong> Avoid dwelling on difficulty or anticipating future challenges, and replace negative self-talk with empowering thoughts.</p>
+                     </div>
+                   </li>
+                   
+                   <li>
+                     <div class="tip">
+                       <div class="iconholder">
+                         <div class="icon">3 </div>
+                         <div class="icon2"><img src="./images/rest-tabata.png"></div>
+                       </div>
+                       <p><strong>Identify your resting minute: </strong>Many EMOM workouts have a resting minute where you can recover. Stand tall, take deep breaths, and mentally prepare for the next round.
+                       </p>
+                     </div>
+                   </li>
+                   
+                   <li>
+                     <div class="tip">
+                       <div class="iconholder">
+                         <div class="icon">4 </div>
+                         <div class="icon2"><img src="./images/choose-tabata.png"></div>
+                         </div>
+                       <p><strong>Focus on form:</strong>Proper form can help you avoid injury and get the most out of your exercise.
+                       </p>
+                     </div>
+                   </li>
+                   
+                   <li>
+                     <div class="tip">
+                       <div class="iconholder">
+                         <div class="icon">5 </div>
+                         <div class="icon2"><img src="./images/highintensity-tabata.png"></div>
+                         </div>
+                       <p><strong>Use a variety of movement patterns: </strong>Try to use a variety of movement patterns for each routine, such as push, pull, squat, and hinge.</p>
+                     </div>
+                   </li>
+                   <li>
+                     <div class="tip">
+                       <div class="iconholder">
+                         <div class="icon">6</div>
+                         <div class="icon2"><img src="./images/pullup-tabata.png"></div>
+                         </div>
+                       <p><strong>Start with bodyweight exercises: </strong> If you're new to EMOM workouts, bodyweight exercises are best. Adding weights can increase the risk of injury if you're not prepared. As you get more experienced, you can add dumbbells or kettlebells.
+                       </p>
+                     </div>
+                   </li>
+                   <li>
+                     <div class="tip">
+                       <div class="iconholder">
+                         <div class="icon">7 </div>
+                         <div class="icon2"><img src="./images/listen-tabata.png"></div>
+                         </div>
+                       <p><strong>Use a 1:1 work-to-rest ratio: </strong>For cardio-based EMOM workouts, try a 1:1 ratio (30 seconds on, 30 seconds off), or close to 2:1 (40 seconds on, 20 seconds off). This is especially important if you're alternating between exercises that use different muscle groups</p>
+                     </div>
+                   </li>
+                   <li>
+                     <div class="tip">
+                       <div class="iconholder">
+                         <div class="icon">8 </div>
+                         <div class="icon2"><img src="./images/warmup-tabata.png"></div>
+                         </div>
+                       <p><strong>Warm up and cool down: </strong>To lower your risk of injury, it's important to get your body moving before starting a workout. Try to spend a few minutes engaging in light cardio or dynamic stretches. When your workout is over, take another few minutes to stretch as you cool down.</p>
+                     </div>
+                   </li>
+                   
+             </div>       
+             <hr>
+           <section id="information">
+             <h2>What is EMOM</h2>
+             <h3><p>EMOM workouts are an acronym for every minute on the minute. A form of interval training, the goal with this workout is to complete a certain number of reps of a particular exercise within 60 seconds, and to use whatever time is left in that minute to rest.</p></h3>
+             <hr>
+             <h2> EMOM Exercises </h2>
+             <h3>
+               <ul>
+                 <li >Deadlifts</li>
+                 <li >High Knees</li>
+                 <li >Burpees</li>
+                 <li >Emom cindy workout</li>
+                 <li >Jump Squats</li>
+                 <li >Push-Ups</li>
+                 <li >Plank</li>
+                 <li >Jump Rope</li>
+                 <li >Box Jumps</li>
+                 <li >weight-ups</li>
+               </ul>
+             </h3>
+           </section>
+           
+           
+         </main>
+
+
+
+        <footer>
+            <footer class="footer">
+              
+          
+              <ul class="social-icon">
+              <li class="social-icon__item"><a class="social-icon__link" href="#" target="_blank">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                  </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/TEJASM74" target="_blank">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                  </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/tejasm74" target="_blank">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                  </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/_tejas_m7_/?igshid=dDB3MnQ3bjZtcGRl" target="_blank">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                  </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/TejasManjunath" target="_blank">
+                  <ion-icon name="logo-github"></ion-icon>
+                  </a></li> 
+              
+              </ul>
+              <ul class="menu">
+              <li class="menu__item"><a class="menu__link" href="./index.html">Home</a></li>
+              <li class="menu__item"><a class="menu__link" href="./about.html">About</a></li>
+              <li class="menu__item"><a class="menu__link" href="https://github.com/TejasManjunath">Portfolio</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+        
+              </ul>
+              <p style="text-align: center;">&copy;2023 TEJASM74 | All Rights Reserved</p>
+           </footer>  
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+          </footer>
+          </footer>
+          
+          
+
+
+
+        <!-- ===== IONICONS ===== -->
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="./assets/Emom.js"></script>
+        
+    </body>
+</html>
