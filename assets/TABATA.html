@@ -1,0 +1,273 @@
+S<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="./assets/TABATACSS.css">
+        
+
+        <title>CLOck</title>
+    </head>
+    <body>
+        <header class="header">
+            <a href="#" class="header__logo">CLOck</a>
+
+            <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+
+            <nav class="nav" id="nav-menu">
+                <div class="nav__content bd-grid">
+
+                    <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
+    
+                    <div class="nav__perfil">
+                        <div class="nav__img">
+                            <img src="./image/clockiconimg.png" alt="">
+                        </div>
+                        
+                        <div>
+                            <a href="#" class="nav__name">CLOck</a>
+                            <span class="nav__profesion">Tejas</span>
+                        </div>
+                    </div>
+    
+                    <div class="nav__menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="./index.html" class="nav__link ">Home</a></li>
+                            <li class="nav__item"><a href="./Worldclock.html" class="nav__link ">WORLD CLOCK</a></li>
+                            <li class="nav__item"><a href="./POMODORO.html" class="nav__link active">POMODORO</a></li>
+                            <li class="nav__item"><a href="./Workout.html" class="nav__link">WORKOUT</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="nav__social">
+                      
+                        <ul class="nav__social-icon">
+                            <a class="nav__social-icon" href="#" target="_blank">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            <a class="nav__social-icon" href="https://twitter.com/TEJASM74" target="_blank">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            <a class="nav__social-icon" href="https://www.linkedin.com/in/tejasm74" target="_blank">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            <a class="nav__social-icon" href="https://www.instagram.com/_tejas_m7_/?igshid=dDB3MnQ3bjZtcGRl" target="_blank">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            <a class="nav__social-icon" href="https://github.com/TejasManjunath" target="_blank">
+                                <ion-icon name="logo-github"></ion-icon>
+                                </a>
+                            
+                            </ul>
+
+                    </div>
+                    
+                </div>
+            </nav>
+        </header>
+        <main>
+
+            <div class="heading"> <p class="heading">TABATA TIMER</p></div>
+             
+             <div id="tabata-app">
+                 <div id="container">
+                     <div id="timerMessage"><h2>Start</h2></div>
+                     
+                     <div id="timer">
+                         <div id="time">
+                             <span id="minutes">00</span>
+                             <span id="colon">:</span>
+                             <span id="seconds">00</span>
+                         </div>
+                         <div id="filler"></div>
+                     </div>
+                     <div id="buttons">
+                       <div class="input1">
+                         <div class="input2">
+                           <label for="rounds">Rounds : </label>
+                           <input class="input-number" type="number" id="rounds" min="1" value="8">
+                         </div>
+                         <div class="input3">
+                           <label for="workDuration">Work Duration :</label>
+                           <input class="input-number" type="number" id="workDuration" min="1" value="20">
+                         </div>
+                         <div class="input4">
+                           <label for="restDuration">Rest Duration :</label>
+                           <input class="input-number" type="number" id="restDuration" min="1" value="10">
+                         </div>
+                     </div>
+                         <div class="buttons">
+                             <button id="start">Start</button>
+                             <button id="pause">Pause</button>
+                             <button id="reset">Reset</button>
+                         </div>
+                         
+                     </div>
+                     
+                 </div>
+             </div>
+               
+               <section id="tips-container-section">
+                 <h2>Tips for Tabata exercises</h2>
+                 <p><h3></h3></p>
+                 
+                 <ul class="tips-innercon">
+                   <li>
+                     <div class="tip">
+                       <div class="iconholder">
+                           <div class="icon">1 </div>
+                           <div class="icon2"><img src="./images/timing-tabata.png"></div>
+                       </div>
+                       <p><strong>Understand the Timing :</strong>Tabata involves 20 seconds of intense exercise followed by 10 seconds of rest. Maintaining this timing pattern is crucial for the workout's effectiveness</p>
+                     </div>
+                   </li>
+                   
+                   <li>
+                     <div class="tip">
+                       <div class="iconholder">
+                         <div class="icon">2 </div>
+                         <div class="icon2"><img src="./images/warmup-tabata.png"></div>
+                       </div>
+                       <p><strong>Warm-Up Thoroughly:</strong> Always warm up before starting a Tabata session to prepare your body for the high-intensity workout. A dynamic warm-up is recommended to get your muscles ready for the intense effort</p>
+                     </div>
+                   </li>
+                   
+                   <li>
+                     <div class="tip">
+                       <div class="iconholder">
+                         <div class="icon">3 </div>
+                         <div class="icon2"><img src="./images/pullup-tabata.png"></div>
+                       </div>
+                       <p><strong>Maintain High Intensity: </strong>Tabata requires giving 100% effort during the 20-second intervals. Push yourself to the limit to maximize the benefits of the workout
+                       </p>
+                     </div>
+                   </li>
+                   
+                   <li>
+                     <div class="tip">
+                       <div class="iconholder">
+                         <div class="icon">4 </div>
+                         <div class="icon2"><img src="./images/choose-tabata.png"></div>
+                         </div>
+                       <p><strong>Choose Appropriate Exercises:</strong>Opt for exercises that are easy to perform and allow you to maintain a continuous rep, such as burpees, jump squats, or stationary biking. Avoid complex movements that may hinder your performance
+                       </p>
+                     </div>
+                   </li>
+                   
+                   <li>
+                     <div class="tip">
+                       <div class="iconholder">
+                         <div class="icon">5 </div>
+                         <div class="icon2"><img src="./images/highintensity-tabata.png"></div>
+                         </div>
+                       <p><strong>Avoid Overcomplicating: </strong>Stick to the simplicity of Tabata. Avoid incorporating too many movements or equipment, as the essence of Tabata lies in its straightforward and intense structure</p>
+                     </div>
+                   </li>
+                   <li>
+                     <div class="tip">
+                       <div class="iconholder">
+                         <div class="icon">6</div>
+                         <div class="icon2"><img src="./images/rest-tabata.png"></div>
+                         </div>
+                       <p><strong>Proper Recovery: </strong> Allow for adequate recovery time between Tabata sessions, typically 24 to 72 hours, to prevent overtraining and ensure optimal performance
+                       </p>
+                     </div>
+                   </li>
+                   <li>
+                     <div class="tip">
+                       <div class="iconholder">
+                         <div class="icon">7 </div>
+                         <div class="icon2"><img src="./images/listen-tabata.png"></div>
+                         </div>
+                       <p><strong>Listen to Your Body: </strong>Pay attention to your body's signals during the workout. Adjust the intensity and exercises based on your fitness level and comfort to prevent injury and optimize results</p>
+                     </div>
+                   </li>
+                   <li>
+                     <div class="tip">
+                       <div class="iconholder">
+                         <div class="icon">8 </div>
+                         <div class="icon2"><img src="./images/breathing-tabata.png"></div>
+                         </div>
+                       <p><strong>Breathing Technique: </strong>During the intense 20-second work intervals, remember to breathe deeply and rhythmically. Inhale during the easier part of the exercise and exhale forcefully during the more challenging phase. Proper breathing can help optimize oxygen intake, improve performance, and prevent fatigue during Tabata sessions.</p>
+                     </div>
+                   </li>
+                   
+             </div>       
+             <hr>
+           <section id="information">
+             <h2>What is Tabata</h2>
+             <h3><p>The Tabata protocol, developed by Professor Izumi Tabata, involves ultra-intense exercise for 20 seconds followed by 10 seconds of rest, repeated for 4 minutes (8 cycles). Athletes trained with this method four times a week for six weeks, gaining comparable aerobic improvements to those doing 60 minutes of steady-state training per day. The Tabata group started lower and achieved greater overall aerobic gains, while also experiencing benefits in anaerobic capacity.</p></h3>
+             <hr>
+             <h2> Tabata Exercises </h2>
+             <h3>
+               <ul>
+                 <li >Jumping Jacks</li>
+                 <li >High Knees</li>
+                 <li >Burpees</li>
+                 <li >Mountain Climbers</li>
+                 <li >Jump Squats</li>
+                 <li >Push-Ups</li>
+                 <li >Plank</li>
+                 <li >Jump Rope</li>
+                 <li >Box Jumps</li>
+                 <li >Stationary Biking</li>
+               </ul>
+             </h3>
+           </section>
+           
+           
+         </main>
+
+
+
+        <footer>
+            <footer class="footer">
+              
+          
+              <ul class="social-icon">
+              <li class="social-icon__item"><a class="social-icon__link" href="#" target="_blank">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                  </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/TEJASM74" target="_blank">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                  </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/tejasm74" target="_blank">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                  </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/_tejas_m7_/?igshid=dDB3MnQ3bjZtcGRl" target="_blank">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                  </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/TejasManjunath" target="_blank">
+                  <ion-icon name="logo-github"></ion-icon>
+                  </a></li> 
+              
+              </ul>
+              <ul class="menu">
+              <li class="menu__item"><a class="menu__link" href="./index.html">Home</a></li>
+              <li class="menu__item"><a class="menu__link" href="./about.html">About</a></li>
+              <li class="menu__item"><a class="menu__link" href="https://github.com/TejasManjunath">Portfolio</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+        
+              </ul>
+              <p style="text-align: center;">&copy;2023 TEJASM74 | All Rights Reserved</p>
+           </footer>  
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+          </footer>
+          </footer>
+          
+          
+
+
+
+        <!-- ===== IONICONS ===== -->
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="./assets/TABATAJS.js"></script>
+        
+    </body>
+</html>
