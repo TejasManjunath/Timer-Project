@@ -56,7 +56,7 @@ function startDigitalClock() {
     //world clock
     
     async function getUser(place) {
-      const api_url = `https://timezone.abstractapi.com/v1/current_time/?api_key=7c521e63abd14f03af3040ccfe24da13&location=${place}`
+      const api_url = `api-url_Abstract-API `
       
       const response = await fetch(api_url);
       
